@@ -183,7 +183,9 @@ html{
 .section-title {
     font-size: 2.8rem;
     font-weight: 600;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-color);
 }
 
 .product-carousel {
@@ -289,13 +291,12 @@ html{
 }
 
 .about-us {
-    padding: 6rem 0;
+    padding: 6rem 2rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--bg-color);
     color: var(--text-color);
-    border: solid .5rem var(--main-color);
 }
 
 .about-us img{
@@ -309,6 +310,7 @@ html{
     flex: 1;
     padding-right: 4rem;
     max-width: 50%;
+    text-align: center;
 }
 
 .about-description {
@@ -333,3 +335,79 @@ html{
 .show-more .hidden-content {
     display: block;
 }
+
+.testimonials-container{
+    background-color: var(--bg-color);
+}
+
+.testimonials-center{
+    display: block;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+    height: 10rem;
+
+}
+
+.testiomials-h3{
+    font-size: 2rem;
+    color: var(--main-color);
+    text-align: center;
+}
+
+
+.testimonial-div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
+    grid-template-areas: 
+    "testimonial1 testimonial2 testimonial3"
+    ;
+    gap: 2rem;
+}
+
+.testimonial{
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border: solid .5rem #2c2c2c;
+    padding: 1.5rem;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial1{
+    grid-area: testimonial1;
+}
+
+.testimonial2{
+    grid-area: testimonial2;
+    
+}
+
+.testimonial3{
+    grid-area: testimonial3;
+}
+
+.fake-testimonials-img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+
+.fake-testimonials-p{
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+
+.name-testimonial{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
